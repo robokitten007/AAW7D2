@@ -1,0 +1,10 @@
+<h1 class='page-header'>NEW USER</h1>
+<a calss="button" href="<%= new_session_url %>">Go to Sign-in</a>
+<form class ='form' action="<%= users_url %>" method="POST">
+<%= auth_token %>
+<label for="email">Email:</label>
+<input type="text" id="email" name="user[email]">
+<label for="password">Password:</label>
+<input type="password", id="password" name="user[password]">
+<input type="submit" value="Submit">
+</form>
